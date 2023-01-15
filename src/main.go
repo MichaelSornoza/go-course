@@ -1,38 +1,37 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// Constants
 
-	const pi float64 = 3.14
-	const pi2 = 3.14
+	x := 10
+	y := 50
 
-	fmt.Println("pi:", pi)
-	fmt.Println("pi2:", pi2)
+	result := x + y
 
-	// Int variables
+	fmt.Println(result)
 
-	base := 12
-	var height int = 14
-	var area int
+	result = y - x
 
-	area = base * height
+	fmt.Println(result)
 
-	fmt.Println("Area:", area)
+	result = x * y
 
-	// Zero Values
-	var a int
-	var b float64
-	var c string
-	var d bool
+	fmt.Println(result)
 
-	fmt.Println(a, b, c, d)
+	result = y / x
 
-	// Area de un cuadrado
+	fmt.Println(result)
 
-	const baseCuadrado = 10
-	areaCuadrado := baseCuadrado * baseCuadrado
+	result = y % x
 
-	fmt.Println("Area del cuadrado:", areaCuadrado)
+	fmt.Println(result)
+
+	x++
+	fmt.Println(x)
+
+	x--
+	fmt.Println(x)
 }
