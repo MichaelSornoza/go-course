@@ -1,37 +1,13 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
+	value := -10
 
-	x := 10
-	y := 50
+	fmt.Println("Value:", value)
 
-	result := x + y
+	c := 10 + 8i
 
-	fmt.Println(result)
-
-	result = y - x
-
-	fmt.Println(result)
-
-	result = x * y
-
-	fmt.Println(result)
-
-	result = y / x
-
-	fmt.Println(result)
-
-	result = y % x
-
-	fmt.Println(result)
-
-	x++
-	fmt.Println(x)
-
-	x--
-	fmt.Println(x)
+	fmt.Println("Complex:", c)
 }
